@@ -1,0 +1,15 @@
+name: Multi-line Output
+on: workflow_dispatch
+jobs:
+  initial-job:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Print messages
+        run: |
+            echo "First Output"
+            echo "Second Output"
+            echo "Third Output"
+      - name: Good Message
+        run: |
+            echo "Good Bye!"
+            echo "Thank You!"
